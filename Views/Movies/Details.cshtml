@@ -1,0 +1,82 @@
+﻿@model WindowsFormsApp1.Models.Movie
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Movie</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.titlu)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.titlu)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.regia)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.regia)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.distributia)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.distributia)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dataPremiera)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dataPremiera)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.nrBilete)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nrBilete)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ora)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ora)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dataFinal)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dataFinal)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
